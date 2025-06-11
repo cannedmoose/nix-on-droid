@@ -24,8 +24,7 @@ with lib;
 
       installationDir = mkOption {
         type = types.path;
-        internal = true;
-        readOnly = true;
+        default = "/data/data/com.termux.nix/files/usr";
         description = "Path to installation directory.";
       };
 
@@ -42,8 +41,6 @@ with lib;
   ###### implementation
 
   config = {
-
-    build.installationDir = "/data/data/com.termux.nix/files/usr";
 
   };
 
